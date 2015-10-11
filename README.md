@@ -28,8 +28,9 @@ hci0:	Type: BR/EDR  Bus: USB
 
 * Next, we need to start advertising the data we want:
 
-```
+```bash
 sudo hcitool -i hci0 cmd 0x08 0x0008 1e 02 01 1a 1a ff 4c 00 02 15 1f 16 9f 64 d2 1d 4a 69 ac 5f 27 1d b6 29 ca ca 00 01 00 02 c8 00
+# generated UUID: 1f169f64-d21d-4a69-ac5f-271db629caca
 ```
 
 It's an arcane command, but it's worth knowing the (inexhaustive) explanation:
